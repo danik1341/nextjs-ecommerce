@@ -4,10 +4,16 @@ const nextConfig = {
     serverActions: true,
   },
   images: {
+    // remotePatterns: [
+    //   { hostname: "images.unsplash.com" },
+    //   { hostname: "plus.unsplash.com" },
+    //   { hostname: "lh3.googleusercontent.com" },
+    // ], Use for testing porpeses
     remotePatterns: [
-      { hostname: "images.unsplash.com" },
-      { hostname: "plus.unsplash.com" },
-      { hostname: "lh3.googleusercontent.com" },
+      {
+        protocol: "https",
+        hostname: "**",
+      },
     ],
   },
 };
